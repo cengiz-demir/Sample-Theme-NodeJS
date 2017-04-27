@@ -36,5 +36,5 @@ app.use(function(err, req, res, next) {
 
 // listen on port 3000
 app.listen(port, function () {
-  console.dir('Server running http://localhost/' + port);
+  console.dir('Server running localhost:' + port);
 });
