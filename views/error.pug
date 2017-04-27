@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    section#hero.hero
+
+      include header
+
+      div
+        h1(style='padding-top:150px;text-align:center')= message 
+
+    section.email.wp1.animated.flipInY
+      .email-wrapper
+        .container
+          .row
+            .heading-content
+              h1.heading Lorem Ipsum
+              p
+                | Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            form.subscrible-from(action='#', method='post', role='form')
+              .form-input-group
+                input(placeholder='Enter email adress', required='', type='text')
+              button.btn-fill.subscribe-btn(type='submit') Subscribe
